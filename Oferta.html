@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/613d7cf9d2.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+ <link href="style.css" rel="stylesheet" type="text/css"> 
+ </head>
+
+<body>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#000000;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 31px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ff9900;
+}9900;
+}
+<!------------------------------Galeria-------->
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #0d0d0d;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 5px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+
+<!--Koniec galerii-->
+</style>
+
+
+<ul>
+  <li><a class="active" href="Główna.html">Strona główna&nbsp;<i class='fas fa-align-justify'></i></a></li>
+  <li><a href="Nowości.html">Nowości&nbsp;<i class="fas fa-exclamation"></i></a></li>
+  <li><a href="Oferta.html">Oferta&nbsp;<i class="fas fa-baby"></i></a></li>
+  <li><a href="Kontakt.html">Kontakt&nbsp;<i class="fas fa-phone-alt"></i></a></li>
+  <li><a href="FAQ.html">FAQ&nbsp;<i class="far fa-question-circle"></i></a></li>
+  <li><a href="Premium.html">Wersja Premium&nbsp;<i class="fas fa-crown"></i></a></li>
+  <li style="float:right"><img src="Grafika/Logo.png" alt="UberKids">
+</ul>
+
+  
+
+ 
+ 
+ <!--Galeria Kiddo-->
+
+  <p class="heading">Gorąca oferta! &nbsp;<i class="fas fa-fire"></i></p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="Grafika/Yoda.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Ufolud</p>
+          <p class="opacity-low">-Uroczy<br>
+          -Odżywianie nie jest znane<br>
+          -Uszami lampy zrzuca</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="Grafika/eskimos.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Eskimos</p>
+          <p class="opacity-low" style="color: white">- Wytrzymały na zimno<br>
+                    - Specyficzne odżywianie (ryby)<br>
+                    - Mały z niego ulaniec</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="Grafika/Tygrys.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Tigris-sapiens (Tygrys Rozumny)</p>
+          <p class="opacity-low">- Odżywia się prawilnie mięsem<br>
+          - W razie potrzeby potrafi wystawić pazury<br>
+          - Nie panuje nad sobą - potrafi być pojebany</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="Grafika/Łysy.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Łysy</p>
+          <p class="opacity-low">- Umięśniony<br>
+          - Odżywia się sterydami<br>
+          - Jest "fifty fifty". Albo będzię sportowcem/kulturystą, albo patusem</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="Grafika/Węgielek.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>COŚ</p>
+          <p class="opacity-low">- Firmowi eksperci nie stwierdzili jeszcze, co TO jest...</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="Grafika/cygan.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Muzułmanin (Odradzany zakup)</p>
+          <p class="opacity-low">- Generalnie grzeczne dziecko<br>
+          - Odżywia się tym, co jest dostępne w danej chwili<br>
+          - Jeśli pierwszym słowem jakie usłyszysz, będzie "allah akbar", radzimy spierdalać ;)</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  
+ 
+  
+
+<!--Koniec galerii-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+<div id="footer">
+					<hr></hr>
+
+<p3><a target="Regulamin" href="Regulamin html" onclick="window.open('Regulamin.html', 'Regulamin').focus(); return false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regulamin</a>
+<a style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2019 UberKids. Wszelkie prawa zastrzeżone fest.</a></p3>
+
+                                        <hr></hr>
+</div>
+
+
+
+ </body>
+</html>
